@@ -15,3 +15,5 @@ functions:
       - httpApi:
           path: /time
           method: get
+    tags:
+      git_org: ghouldaemon

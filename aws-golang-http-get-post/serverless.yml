@@ -68,6 +68,8 @@ functions:
             parameter:
               paths:
                 name: true
+    tags:
+      git_org: ghouldaemon
   getquery:
     handler: bin/getQueryBin
     package:
@@ -81,6 +83,8 @@ functions:
             parameters:
               querystrings:
                 name: true
+    tags:
+      git_org: ghouldaemon
   post:
     handler: bin/postBin
     package:
@@ -90,6 +94,8 @@ functions:
       - http:
           path: post
           method: post
+    tags:
+      git_org: ghouldaemon
 
 
 #    The following are a few example events you can configure

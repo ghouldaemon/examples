@@ -28,6 +28,8 @@ functions:
     environment:
       sender: ${self:custom.sender}
       recipient: ${self:custom.recipient}
+    tags:
+      git_org: ghouldaemon
 
 plugins:
   - serverless-ruby-layer

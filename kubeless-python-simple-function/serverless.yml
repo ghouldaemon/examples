@@ -12,3 +12,5 @@ plugins:
 functions:
   hello:
     handler: handler.hello
+    tags:
+      git_org: ghouldaemon

@@ -8,3 +8,5 @@ provider:
 functions:
   function1:
     handler: index.handler
+    tags:
+      git_org: ghouldaemon

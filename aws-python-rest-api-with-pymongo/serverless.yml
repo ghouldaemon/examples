@@ -27,7 +27,8 @@ functions:
           path: item
           method: post
           cors: true
-
+    tags:
+      git_org: ghouldaemon
   list:
     handler: item/list.list
     events:
@@ -35,7 +36,8 @@ functions:
           path: item
           method: get
           cors: true
-
+    tags:
+      git_org: ghouldaemon
   get:
     handler: item/get.get
     events:
@@ -43,7 +45,8 @@ functions:
           path: item/{id}
           method: get
           cors: true
-
+    tags:
+      git_org: ghouldaemon
   delete:
     handler: item/delete.delete
     events:
@@ -51,3 +54,5 @@ functions:
           path: item/{id}
           method: delete
           cors: true
+    tags:
+      git_org: ghouldaemon

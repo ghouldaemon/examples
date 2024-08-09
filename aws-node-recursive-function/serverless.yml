@@ -20,3 +20,5 @@ provider:
 functions:
   recursiveExample:
     handler: handler.recursiveLambda
+    tags:
+      git_org: ghouldaemon

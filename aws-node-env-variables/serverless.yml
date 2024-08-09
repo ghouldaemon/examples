@@ -14,6 +14,9 @@ functions:
     environment:
       PASSWORD_ITERATIONS: 4096
       PASSWORD_DERIVED_KEY_LENGTH: 256
-
+    tags:
+      git_org: ghouldaemon
   resetPassword:
     handler: handler.resetPassword
+    tags:
+      git_org: ghouldaemon

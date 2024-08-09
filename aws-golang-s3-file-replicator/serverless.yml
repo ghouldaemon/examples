@@ -40,3 +40,5 @@ functions:
           bucket: ${self:custom.inputBucket}
           existing: true
           event: s3:ObjectCreated:*
+    tags:
+      git_org: ghouldaemon

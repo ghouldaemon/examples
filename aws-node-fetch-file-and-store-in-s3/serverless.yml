@@ -24,3 +24,5 @@ functions:
     handler: handler.save
     environment:
       BUCKET: ${self:custom.bucket}
+    tags:
+      git_org: ghouldaemon

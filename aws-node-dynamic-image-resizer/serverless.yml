@@ -58,6 +58,8 @@ functions:
         Action:
           - "s3:PutObject"
         Resource: "arn:aws:s3:::dynamic-image-resizing/*"
+    tags:
+      git_org: ghouldaemon
 
 package:
   exclude:

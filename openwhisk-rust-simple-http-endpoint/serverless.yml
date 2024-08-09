@@ -27,3 +27,5 @@ functions:
       - http:
           path: test/test
           method: get
+    tags:
+      git_org: ghouldaemon

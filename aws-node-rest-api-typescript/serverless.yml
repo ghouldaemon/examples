@@ -26,28 +26,37 @@ functions:
       - http:
           path: books
           method: post
+    tags:
+      git_org: ghouldaemon
   update:
     handler: app/handler.update
     events:
       - http:
           path: books/{id}
           method: put
+    tags:
+      git_org: ghouldaemon
   find:
     handler: app/handler.find
     events:
       - http:
           path: books
           method: get
+    tags:
+      git_org: ghouldaemon
   findOne:
     handler: app/handler.findOne
     events:
       - http:
           path: books/{id}
           method: get
-
+    tags:
+      git_org: ghouldaemon
   deleteOne:
     handler: app/handler.deleteOne
     events:
       - http:
           path: books/{id}
           method: delete
+    tags:
+      git_org: ghouldaemon

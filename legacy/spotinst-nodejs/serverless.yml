@@ -26,6 +26,8 @@ functions:
     memory: 128
     timeout: 30
     access: private
+    tags:
+      git_org: ghouldaemon
 #    iamRoleConfig:
 #      roleId: # role-id
 #    activeVersions:

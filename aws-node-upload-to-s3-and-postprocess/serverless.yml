@@ -23,3 +23,5 @@ functions:
           event: s3:ObjectCreated:*
           rules:
             - suffix: .png
+    tags:
+      git_org: ghouldaemon

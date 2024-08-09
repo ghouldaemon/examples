@@ -25,6 +25,8 @@ functions:
       - s3:
           bucket: ${self:custom.bucket}
           event: s3:ObjectCreated:*
+    tags:
+      git_org: ghouldaemon
 
 resources:
   Resources:

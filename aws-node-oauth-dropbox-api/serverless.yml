@@ -34,7 +34,8 @@ functions:
           method: get
           path: dropbox
           cors: true
-          
+    tags:
+      git_org: ghouldaemon
   dropbox_step2:
     handler: dropbox/handler.step2
     events:
@@ -42,3 +43,5 @@ functions:
           method: get
           path: dropbox/callback
           cors: true
+    tags:
+      git_org: ghouldaemon

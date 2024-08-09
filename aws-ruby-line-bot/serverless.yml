@@ -13,6 +13,8 @@ functions:
       - http:
           path: webhook
           method: post
+    tags:
+      git_org: ghouldaemon
 
 plugins:
   - serverless-hooks-plugin

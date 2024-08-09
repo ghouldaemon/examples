@@ -20,6 +20,8 @@ functions:
           path: /produce
     environment:
       QUEUE_URL: ${construct:jobs.queueUrl}
+    tags:
+      git_org: ghouldaemon
 
 plugins:
   - serverless-lift

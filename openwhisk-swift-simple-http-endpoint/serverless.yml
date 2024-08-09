@@ -13,6 +13,8 @@ functions:
       - http:
           path: time
           method: get
+    tags:
+      git_org: ghouldaemon
 
 
 plugins:

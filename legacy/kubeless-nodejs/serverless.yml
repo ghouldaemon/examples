@@ -27,3 +27,5 @@ plugins:
 functions:
   capitalize:
     handler: handler.capitalize
+    tags:
+      git_org: ghouldaemon

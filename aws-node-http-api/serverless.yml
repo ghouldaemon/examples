@@ -12,3 +12,5 @@ functions:
       - httpApi:
           path: /
           method: get
+    tags:
+      git_org: ghouldaemon

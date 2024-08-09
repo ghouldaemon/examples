@@ -44,7 +44,8 @@ functions:
           path: todos
           method: post
           cors: true
-
+    tags:
+      git_org: ghouldaemon
   list:
     handler: todos/list.todo_list
     events:
@@ -52,7 +53,8 @@ functions:
           path: todos
           method: get
           cors: true
-
+    tags:
+      git_org: ghouldaemon
   get:
     handler: todos/get.get
     events:
@@ -64,7 +66,8 @@ functions:
           request:
             paths:
               todo_id: true
-
+    tags:
+      git_org: ghouldaemon
   update:
     handler: todos/update.update
     events:
@@ -76,6 +79,8 @@ functions:
           request:
             paths:
               todo_id: true
+    tags:
+      git_org: ghouldaemon
   delete:
     handler: todos/delete.delete
     events:
@@ -87,6 +92,8 @@ functions:
           request:
             paths:
               todo_id: true
+    tags:
+      git_org: ghouldaemon
 
 resources:
   Resources:

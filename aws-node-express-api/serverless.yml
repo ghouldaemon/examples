@@ -10,3 +10,5 @@ functions:
     handler: index.handler
     events:
       - httpApi: '*'
+    tags:
+      git_org: ghouldaemon

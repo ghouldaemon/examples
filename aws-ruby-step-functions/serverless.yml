@@ -23,20 +23,30 @@ functions:
     handler: src/handlers/buy_ticket/handler.run
     environment:
       TABLE_NAME: ${self:custom.TicketsTable}
+    tags:
+      git_org: ghouldaemon
   reserve-parking-lot-space:
     handler: src/handlers/reserve_parking_lot_space/handler.run
     environment:
       TABLE_NAME: ${self:custom.ParkingLotSpacesTable}
+    tags:
+      git_org: ghouldaemon
   return-ticket:
     handler: src/handlers/return_ticket/handler.run
     environment:
       TABLE_NAME: ${self:custom.TicketsTable}
+    tags:
+      git_org: ghouldaemon
   release-parking-space:
     handler: src/handlers/release_parking_space/handler.run
     environment:
       TABLE_NAME: ${self:custom.ParkingLotSpacesTable}
+    tags:
+      git_org: ghouldaemon
   check-weather:
     handler: src/handlers/check_weather/handler.run
+    tags:
+      git_org: ghouldaemon
 plugins:
   - serverless-ruby-layer
   - serverless-step-functions

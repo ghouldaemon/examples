@@ -16,9 +16,13 @@ provider:
 functions:
   first:
     handler: first.hello
+    tags:
+      git_org: ghouldaemon
   second:
     handler: second.hello
     events:
       - httpApi:
           method: get
           path: /second
+    tags:
+      git_org: ghouldaemon

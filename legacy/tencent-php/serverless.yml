@@ -42,6 +42,8 @@ plugins:
 functions:
   hello_world:
     handler: index.main_handler
+    tags:
+      git_org: ghouldaemon
 #    description: Tencent Serverless Cloud Function
 #    runtime: Php7 # Php7 or Php5
 #    memorySize: 256

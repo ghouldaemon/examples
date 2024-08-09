@@ -19,6 +19,8 @@ functions:
         Ref: StackeryEnvConfiggithubSecretAsString
       SLACK_WEBHOOK_URL:
         Ref: StackeryEnvConfigslackWebhookURLAsString
+    tags:
+      git_org: ghouldaemon
 resources:
   Parameters:
     StackeryStackTagName:

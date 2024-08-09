@@ -14,6 +14,8 @@ functions:
       - httpApi:
           method: get
           path: /landing-page
+    tags:
+      git_org: ghouldaemon
 
 plugins:
   - serverless-esbuild

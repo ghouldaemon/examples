@@ -25,7 +25,8 @@ functions:
       - http:
           method: post
           path: sender
-
+    tags:
+      git_org: ghouldaemon
   receiver:
     handler: handler.receiver
     events:
@@ -34,6 +35,8 @@ functions:
             Fn::GetAtt:
               - receiverQueue
               - Arn
+    tags:
+      git_org: ghouldaemon
 resources:
   Resources:
     receiverQueue:

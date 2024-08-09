@@ -30,27 +30,32 @@ functions:
       - httpApi:
           path: /todos
           method: post
-
+    tags:
+      git_org: ghouldaemon
   list:
     handler: todos/list.list
     events:
       - httpApi:
           path: /todos
           method: get
-
+    tags:
+      git_org: ghouldaemon
   get:
     handler: todos/get.get
     events:
       - httpApi:
           path: /todos/{id}
           method: get
-
+    tags:
+      git_org: ghouldaemon
   update:
     handler: todos/update.update
     events:
       - httpApi:
           path: /todos/{id}
           method: put
+    tags:
+      git_org: ghouldaemon
 
 resources:
   Resources:

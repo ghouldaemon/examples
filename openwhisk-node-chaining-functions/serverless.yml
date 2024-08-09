@@ -21,17 +21,27 @@ provider:
 functions:
   split:
     handler: utils.split
+    tags:
+      git_org: ghouldaemon
   reverse:
     handler: utils.reverse
+    tags:
+      git_org: ghouldaemon
   join:
     handler: utils.join
+    tags:
+      git_org: ghouldaemon
   chained_seq:
     sequence:
       - split
       - reverse
       - join
+    tags:
+      git_org: ghouldaemon
   manual_seq:
     handler: handler.chain
+    tags:
+      git_org: ghouldaemon
 
 # remember to run npm install to download the provider plugin.        
 plugins:

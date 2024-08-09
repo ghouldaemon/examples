@@ -38,6 +38,8 @@ functions:
       - http:
           path: /{proxy+}
           method: ANY
+    tags:
+      git_org: ghouldaemon
 
 plugins:
   - serverless-rack

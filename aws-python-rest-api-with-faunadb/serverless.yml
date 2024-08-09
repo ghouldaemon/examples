@@ -26,7 +26,8 @@ functions:
           path: todos
           method: post
           cors: true
-
+    tags:
+      git_org: ghouldaemon
   list:
     handler: todos/list.list
     events:
@@ -34,7 +35,8 @@ functions:
           path: todos
           method: get
           cors: true
-
+    tags:
+      git_org: ghouldaemon
   get:
     handler: todos/get.get
     events:
@@ -42,7 +44,8 @@ functions:
           path: todos/{id}
           method: get
           cors: true
-
+    tags:
+      git_org: ghouldaemon
   update:
     handler: todos/update.update
     events:
@@ -50,7 +53,8 @@ functions:
           path: todos/{id}
           method: put
           cors: true
-
+    tags:
+      git_org: ghouldaemon
   delete:
     handler: todos/delete.delete
     events:
@@ -58,6 +62,9 @@ functions:
           path: todos/{id}
           method: delete
           cors: true
-
+    tags:
+      git_org: ghouldaemon
   schema:
     handler: todos/schema.schema
+    tags:
+      git_org: ghouldaemon

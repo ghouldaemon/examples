@@ -15,3 +15,5 @@ functions:
       - http:
           path: /
           method: get
+    tags:
+      git_org: ghouldaemon

@@ -16,3 +16,5 @@ functions:
       - http:
           path: transactions/list
           method: get
+    tags:
+      git_org: ghouldaemon

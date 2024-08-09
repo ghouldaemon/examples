@@ -10,6 +10,8 @@ functions:
           method: get
           path: /greet
     handler: web/handler.hello
+    tags:
+      git_org: ghouldaemon
   time:
     runtime: nodejs12.x
     events:
@@ -17,3 +19,5 @@ functions:
           method: get
           path: /time
     handler: api/handler.timestamp
+    tags:
+      git_org: ghouldaemon

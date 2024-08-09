@@ -17,11 +17,16 @@ functions:
             name: auth
             identitySource:
               - 'route.request.header.Auth'
+    tags:
+      git_org: ghouldaemon
   default:
     handler: handler.default
     events:
       - websocket:
           route: $default
-
+    tags:
+      git_org: ghouldaemon
   auth:
     handler: handler.auth
+    tags:
+      git_org: ghouldaemon

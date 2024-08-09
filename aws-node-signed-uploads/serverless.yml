@@ -42,6 +42,8 @@ functions:
           path: upload
           method: get
           cors: true
+    tags:
+      git_org: ghouldaemon
 
 resources:
   Resources:

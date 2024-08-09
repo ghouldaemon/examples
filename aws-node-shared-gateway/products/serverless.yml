@@ -16,3 +16,5 @@ functions:
       - http:
           path: products/list
           method: get
+    tags:
+      git_org: ghouldaemon

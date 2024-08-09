@@ -8,6 +8,8 @@ provider:
 functions:
   hello:
     handler: handler.hello
+    tags:
+      git_org: ghouldaemon
 
 plugins:
   - serverless-esbuild

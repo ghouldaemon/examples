@@ -9,8 +9,12 @@ provider:
 functions:
   hello:
     handler: .build/release/hello
+    tags:
+      git_org: ghouldaemon
   welcome:
     handler: .build/release/welcome
+    tags:
+      git_org: ghouldaemon
 
 custom:
   scripts:

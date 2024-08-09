@@ -13,12 +13,16 @@ functions:
       - httpApi:
           path: /hello
           method: get
+    tags:
+      git_org: ghouldaemon
   world:
     handler: bin/world
     events:
       - httpApi:
           path: /world
           method: get
+    tags:
+      git_org: ghouldaemon
 
 package:
  exclude:

@@ -35,3 +35,5 @@ functions:
       TABLE: "${self:custom.dynamoDBTableName}"
       PREFIX: "${self:custom.prefix}"
     timeout: 300
+    tags:
+      git_org: ghouldaemon
