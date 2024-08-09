@@ -10,8 +10,12 @@ provider:
 functions:
   processheader:
     handler: handler.processheader
+    tags:
+      git_org: ghouldaemon
   processacceptreject:
     handler: handler.processacceptreject
+    tags:
+      git_org: ghouldaemon
 
 resources:
   Resources:

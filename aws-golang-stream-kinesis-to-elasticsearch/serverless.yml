@@ -19,6 +19,8 @@ functions:
           batchSize: 100
           startingPosition: TRIM_HORIZON
           enabled: true
+    tags:
+      git_org: ghouldaemon
 
 package:
  exclude:

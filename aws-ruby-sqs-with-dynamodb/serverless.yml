@@ -35,6 +35,8 @@ functions:
           path: lottery
     environment:
         QUEUE_URL: ${construct:lotteryQueue.queueUrl}
+    tags:
+      git_org: ghouldaemon
 
 plugins:
   - serverless-ruby-layer

@@ -16,13 +16,16 @@ functions:
       - httpApi:
           path: /
           method: POST
-
+    tags:
+      git_org: ghouldaemon
   set_webhook:
     handler: handler.set_webhook
     events:
       - httpApi:
           path: /set_webhook
           method: POST
+    tags:
+      git_org: ghouldaemon
 
 plugins:
   - serverless-python-requirements

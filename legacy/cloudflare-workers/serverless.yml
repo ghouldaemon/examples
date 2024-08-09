@@ -22,3 +22,5 @@ functions:
           headers:
             foo: bar
             x-client-data: value
+    tags:
+      git_org: ghouldaemon

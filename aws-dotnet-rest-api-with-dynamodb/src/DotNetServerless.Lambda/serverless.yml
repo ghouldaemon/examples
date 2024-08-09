@@ -29,7 +29,8 @@ functions:
           path: items
           method: post
           cors: true
-
+    tags:
+      git_org: ghouldaemon
   get:
     handler: DotNetServerless.Lambda::DotNetServerless.Lambda.Functions.GetItemFunction::Run
     events:
@@ -37,7 +38,8 @@ functions:
           path: items/{id}
           method: get
           cors: true
-
+    tags:
+      git_org: ghouldaemon
   update:
     handler: DotNetServerless.Lambda::DotNetServerless.Lambda.Functions.UpdateItemFunction::Run
     events:
@@ -45,6 +47,8 @@ functions:
           path: items
           method: put
           cors: true
+    tags:
+      git_org: ghouldaemon
 
 resources:
   Resources:

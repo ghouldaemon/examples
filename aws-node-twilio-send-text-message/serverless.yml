@@ -25,3 +25,5 @@ functions:
           method: post
           integration: lambda
           cors: true
+    tags:
+      git_org: ghouldaemon

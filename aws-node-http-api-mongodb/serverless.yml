@@ -16,24 +16,29 @@ functions:
       - httpApi:
           path: /user
           method: post
-
+    tags:
+      git_org: ghouldaemon
   updateUser:
     handler: handler.updateUser
     events:
       - httpApi:
           path: /user/{id}
           method: put
-
+    tags:
+      git_org: ghouldaemon
   deleteUser:
     handler: handler.deleteUser
     events:
       - httpApi:
           path: /user/{id}
           method: delete
-
+    tags:
+      git_org: ghouldaemon
   user:
     handler: handler.user
     events:
       - httpApi:
           path: /user/{id}
           method: get
+    tags:
+      git_org: ghouldaemon

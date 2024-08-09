@@ -25,3 +25,5 @@ functions:
   # client:
     # bucketName: sfe-demo-email-form # If you want to deploy the front-end, change this to a universally unique AWS S3 bucket name
     # distributionFolder: ../frontend/build
+    tags:
+      git_org: ghouldaemon

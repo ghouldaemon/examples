@@ -24,3 +24,5 @@ functions:
           path: hello-world
           method: get
           cors: true
+    tags:
+      git_org: ghouldaemon

@@ -23,6 +23,8 @@ functions:
       - http:
           path: query
           method: get
+    tags:
+      git_org: ghouldaemon
 
 resources:
   Resources:

@@ -12,5 +12,7 @@ functions:
       - http:
           path: /webhook
           method: POST
+    tags:
+      git_org: ghouldaemon
 plugins:
   - serverless-python-requirements

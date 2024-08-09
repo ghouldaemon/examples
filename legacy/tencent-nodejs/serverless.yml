@@ -50,6 +50,8 @@ plugins:
 functions:
   hello_world:
     handler: index.main_handler
+    tags:
+      git_org: ghouldaemon
 #    description: Tencent Serverless Cloud Function
 #    runtime: Nodejs8.9 # Nodejs8.9 or Nodejs6.10
 #    memorySize: 256

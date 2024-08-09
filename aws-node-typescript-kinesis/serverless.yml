@@ -26,7 +26,8 @@ functions:
       - http:
           method: post
           path: producer
-
+    tags:
+      git_org: ghouldaemon
   consumer:
     handler: handler.consumer
     events:
@@ -36,6 +37,8 @@ functions:
             Fn::GetAtt:
               - kinesisStream
               - Arn
+    tags:
+      git_org: ghouldaemon
 resources:
   Resources:
     kinesisStream:

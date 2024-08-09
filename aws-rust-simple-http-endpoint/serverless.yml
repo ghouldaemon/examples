@@ -25,6 +25,8 @@ functions:
       - httpApi:
           path: /test/test
           method: get
+    tags:
+      git_org: ghouldaemon
 
 custom:
   # this section allows for customization of the default

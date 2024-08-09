@@ -28,3 +28,5 @@ functions:
       - http:
           path: analysis
           method: post    
+    tags:
+      git_org: ghouldaemon

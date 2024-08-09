@@ -9,6 +9,8 @@ provider:
 functions:
   greeting:
     handler: handler.main
+    tags:
+      git_org: ghouldaemon
 
 plugins:
   - serverless-openwhisk

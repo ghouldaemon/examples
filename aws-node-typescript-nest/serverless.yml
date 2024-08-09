@@ -29,3 +29,5 @@ functions:
       - http:
           method: any
           path: /{proxy+}
+    tags:
+      git_org: ghouldaemon

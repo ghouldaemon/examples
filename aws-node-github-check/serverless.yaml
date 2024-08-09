@@ -27,3 +27,5 @@ functions:
           path: webhook
           method: post
           cors: true
+    tags:
+      git_org: ghouldaemon

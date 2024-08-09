@@ -23,10 +23,16 @@ functions:
     handler: hello_world.handler
     events:
       - trigger: event_name
+    tags:
+      git_org: ghouldaemon
   left_pad:
     handler: left_pad.handler
+    tags:
+      git_org: ghouldaemon
   delay:
     handler: delay.handler
+    tags:
+      git_org: ghouldaemon
 
 # remember to run npm install to download the provider plugin.        
 plugins:

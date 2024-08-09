@@ -83,7 +83,8 @@ functions:
           method: post
           cors: true
           integration: lambda
-
+    tags:
+      git_org: ghouldaemon
   bucket:
     handler: asset/bucket.event
     name: ${self:custom.stack_name}-bucket
@@ -99,7 +100,8 @@ functions:
           event: s3:ObjectRemoved:*
           rules:
             - prefix: ${self:custom.s3_key_base}
-
+    tags:
+      git_org: ghouldaemon
   list:
     handler: asset/list.asset_list
     name: ${self:custom.stack_name}-list
@@ -110,7 +112,8 @@ functions:
           method: get
           cors: true
           integration: lambda
-
+    tags:
+      git_org: ghouldaemon
   get:
     handler: asset/get.get
     name: ${self:custom.stack_name}-get
@@ -127,6 +130,8 @@ functions:
               parameters:
                  paths:
                    timeout: true
+    tags:
+      git_org: ghouldaemon
   update:
     handler: asset/update.update
     name: ${self:custom.stack_name}-update
@@ -140,6 +145,8 @@ functions:
           request:
             paths:
               asset_id: true
+    tags:
+      git_org: ghouldaemon
   delete:
     handler: asset/delete.delete
     name: ${self:custom.stack_name}-delete
@@ -153,6 +160,8 @@ functions:
           request:
             paths:
               asset_id: true
+    tags:
+      git_org: ghouldaemon
 
 resources:
   Resources:

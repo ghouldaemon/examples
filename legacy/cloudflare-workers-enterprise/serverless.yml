@@ -22,7 +22,8 @@ functions:
           headers:
             foo: bar
             x-client-data: value
-
+    tags:
+      git_org: ghouldaemon
   foo:
     name: foo
     script: bar
@@ -33,3 +34,5 @@ functions:
           headers:
             foo: bar
             x-client-data: value
+    tags:
+      git_org: ghouldaemon

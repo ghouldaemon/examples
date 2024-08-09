@@ -18,6 +18,8 @@ functions:
       - s3: ${self:custom.bucket}
     layers:
       - {Ref: FfmpegLambdaLayer}
+    tags:
+      git_org: ghouldaemon
 
 layers:
   ffmpeg:

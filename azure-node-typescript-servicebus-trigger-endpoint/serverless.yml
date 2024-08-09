@@ -31,7 +31,8 @@ functions:
                     - post
                 route: api/v3/send
                 authLevel: anonymous
-    
+        tags:
+          git_org: ghouldaemon
     sampleHandler:
         handler: src/controller/triggerFunctionController.sampleHandler
         events:
@@ -41,3 +42,5 @@ functions:
                 queueName: myqueuename
                 accessRights: manage
                 connection: SERVICE_BUS_CONNECTION_STRING
+        tags:
+          git_org: ghouldaemon

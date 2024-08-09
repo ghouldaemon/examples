@@ -23,6 +23,8 @@ functions:
   auth:
     handler: lambda_handlers.auth
     cors: true
+    tags:
+      git_org: ghouldaemon
   publicEndpoint:
     handler: lambda_handlers.public_endpoint
     events:
@@ -30,6 +32,8 @@ functions:
           path: api/public
           method: post
           cors: true
+    tags:
+      git_org: ghouldaemon
   privateEndpoint:
     handler: lambda_handlers.private_endpoint
     events:
@@ -39,6 +43,8 @@ functions:
           # See custom authorizer docs here: http://bit.ly/2gXw9pO
           authorizer: auth
           cors: true
+    tags:
+      git_org: ghouldaemon
 
 resources:
   Resources:

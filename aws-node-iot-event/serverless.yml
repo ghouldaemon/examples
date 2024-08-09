@@ -12,3 +12,5 @@ functions:
     events:
       - iot:
           sql: "SELECT * FROM 'mybutton'"
+    tags:
+      git_org: ghouldaemon

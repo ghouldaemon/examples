@@ -31,6 +31,8 @@ functions:
     handler: wsgi_handler.handler
     events:
       - httpApi: '*'
+    tags:
+      git_org: ghouldaemon
 
 plugins:
   - serverless-wsgi

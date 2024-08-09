@@ -26,3 +26,5 @@ functions:
     events:
       - http:
           path: /hellogo
+    tags:
+      git_org: ghouldaemon

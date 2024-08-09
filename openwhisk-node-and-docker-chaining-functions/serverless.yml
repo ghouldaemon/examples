@@ -21,18 +21,26 @@ provider:
 functions:
   location_from_address:
     handler: handler.locationFromAddress
+    tags:
+      git_org: ghouldaemon
   sunrise_sunset:
     handler: handler.sunriseSunset
+    tags:
+      git_org: ghouldaemon
   jq:
     handler: jamesthomas/openwhisk-jq
     runtime: docker
     parameters: 
       jq: '.results[0].geometry.location'
+    tags:
+      git_org: ghouldaemon
   location_sunrise_sunset:
     sequence: 
       - location_from_address
       - jq
       - sunrise_sunset
+    tags:
+      git_org: ghouldaemon
 
 # remember to run npm install to download the provider plugin.        
 plugins:

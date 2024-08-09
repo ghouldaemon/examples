@@ -34,8 +34,12 @@ functions:
     handler: src/handlers/check_comment/handler.run
     environment:
       region: ${self:provider.region}
+    tags:
+      git_org: ghouldaemon
   redact-comment:
     handler: src/handlers/redact_comment/handler.run
+    tags:
+      git_org: ghouldaemon
 plugins:
   - serverless-ruby-layer
   - serverless-step-functions

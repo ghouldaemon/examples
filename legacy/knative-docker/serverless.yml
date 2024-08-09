@@ -39,6 +39,8 @@ functions:
     #   - cron:
     #       schedule: '* * * * *'
     #       data: '{"message": "Hello world from a Cron event source!"}'
+    tags:
+      git_org: ghouldaemon
 
 plugins:
   - serverless-knative
